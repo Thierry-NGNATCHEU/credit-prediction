@@ -1,0 +1,12 @@
+name: mon_nouvel_env_sklearn
+channels:
+  - defaults
+dependencies:
+  - python=3.10
+  - pip
+  - scikit-learn
+  - jupyter
+  - matplotlib
+  - pandas
+  - pip:
+      - seaborn

@@ -1,7 +1,7 @@
   
 Projet Machine Learning – Analyse et Prédiction Clientèle Bancaire  
 ---------------------------------------------------------------
-Auteurs : NGNATCHEU THIERRY & NYONKWE RUSSEL 
+Auteurs : NGNATCHEU THIERRY & NGUEKOUO CINTHIA 
 
 👋 Bienvenue !
 
@@ -45,55 +45,23 @@ Les variables numériques comme le revenu ou l'âge ont été standardisées pou
  Modèles utilisés
 
 Pour chaque tâche classification et régression, on a testé 4 modèles différents :
--  Deux modèles ensemblistes (Random Forest, Gradient Boosting)
--  Un modèle appris en cours (Régression logistique, Régression linéaire)
--  Un modèle plus original (SGD, Naive Bayes, Réseaux de neurones, etc.)
+-  Deux modèles ensemblistes (Random Forest, Gradient Boosting, Stacking, Bagging)
+-  Un modèle appris en cours (Naive Bayes, Régression linéaire)
+-  Un modèle plus original (SVR, KNN.)
 ---
 
  Métriques utilisées :
 
-- Pour la classification : accuracy, recall, AUC
+- Pour la classification : accuracy, recall, AUC, precision
 - Pour la régression : R², RMSE, MAE
 
 ---
 
- Simulation en live
-
-L’objectif final est interactif : on propose à quelqu’un du public de donner son âge, revenu, situation familiale, etc.  
-En retour, le système prédit en temps réel :
-1. La probabilité qu’il accepte un prêt
-2. Son revenu estimé (utile pour des clients avec données manquantes)
-
-Un exemple :
-
-python
-exemple_client = {
-    'Age': 42,
-    'Experience': 15,
-    'Income': 85,
-    'Family': 3,
-    'CCAvg': 2.1,
-    'Education': 2,
-    'Mortgage': 0,
-    'Securities Account': 0,
-    'CD Account': 0,
-    'Online': 1,
-    'CreditCard': 1
-}
-
-
-
+ 
 Structure du projet :
 - classification.ipynb : Notebook pour la tâche de classification
 - regression.ipynb : Notebook pour la tâche de régression
 - environment.yml : Fichier pour créer l'environnement jupyter
 - README.txt : Ce fichier de documentation
-
-Installation :
-1. Installer python
-2. Ouvrir un terminal dans le dossier du projet: (venv) C:\Users\cinthia\OneDrive\Bureau\ProjetMachine learning>
-3. Exécuter environnement de bibliothèques : python env create -f bibliotheques.yml
-4. Activer l’environnement : jupyter activate heart-disease-ml
-5. Lancer Jupyter Notebook
 
 
